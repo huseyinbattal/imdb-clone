@@ -20,7 +20,7 @@ npm run dev`
 
 ## Packages
 
-- "@heroicons/react"
+- npm install @heroicons/react
 
 ## Features
 
