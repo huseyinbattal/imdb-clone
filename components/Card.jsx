@@ -12,12 +12,12 @@ export default function Card({ result }) {
         height={100}
       />
       <div className="p-2">
-        <p className="truncate text-lg">{result.overview}</p>
-        <h2 className="text-lg font-bold">{result.title || result.name}</h2>
+        <p className="truncate text-gray-900 text-lg">{result.overview}</p>
+        <h2 className="text-lg text-green-500 font-bold">{result.title || result.name}</h2>
         <p className="flex items-center">
           {result.release_date || result.first_air_date}
           {/* <ThumbUpIcon className="h-5 ml-3 mr-1" /> */}
-          {result.vote_count}
+          {/* {result.vote_count} */}
         </p>
       </div>
     </div>
