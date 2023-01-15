@@ -1,5 +1,5 @@
 'use client'
-import request from "../utils/request";
+import request from "../utils/requests";
 import React from "react";
 import { useRouter } from "next/navigation";
 

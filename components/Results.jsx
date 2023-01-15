@@ -1,11 +1,15 @@
 import React from 'react'
 
-const Results = () => {
+const Results = ({results}) => {
   return (
       <div>
-          <h1>Results</h1>
+      {results.map(result => {
+        return (
+          <h1 key={result}>{ result.title}</h1>
+            )
+          })}
     </div>
   )
 }
 
-export default Results
+export default Results;
