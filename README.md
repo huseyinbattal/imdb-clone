@@ -26,4 +26,5 @@ npm run dev`
 
 - Responsive design
 - Fetching data IMDb Api
+- Server Side Rendering
 
