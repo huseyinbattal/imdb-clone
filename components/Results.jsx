@@ -1,15 +1,11 @@
-import React from 'react'
+import Card from "./Card";
 
-const Results = ({results}) => {
+export default function Results({ results }) {
   return (
-      <div>
-      {results.map(result => {
-        return (
-          <h1 key={result}>{ result.title}</h1>
-            )
-          })}
+    <div className="bg-gray-700 text-gray-200 select-none sm:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+      {results.map((result) => (
+        <Card key={result.id} result={result} />
+      ))}
     </div>
-  )
+  );
 }
-
-export default Results;
