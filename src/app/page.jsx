@@ -3,16 +3,17 @@ import { Inter } from "@next/font/google";
 import Header from "components/Header";
 import Navbar from "components/Navbar";
 import Results from "components/Results";
-import requests from "utils/requests";
+import { getData } from "./getData";
+// import requests from "utils/requests";
 import { use } from "react";
 
-const API_KEY = process.env.API_KEY;
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const data = use(getData());
-  console.log(data.results);
-  const results = data.results;
+  //console.log(data.results);
+ 
   return (
     <div>
       {/* Header */}
@@ -22,7 +23,7 @@ export default function Home() {
       <Navbar />
 
       {/* Results */}
-      <Results results={results} />
+      <Results data={data} />
     </div>
   );
 }
@@ -42,6 +43,3 @@ export default function Home() {
 //   }
 // }
 
-async function getData() {
-  return await (await fetch(`https://api.themoviedb.org/3/trending/all/week?api_key=${API_KEY}`)).json()
-}
