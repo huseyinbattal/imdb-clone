@@ -25,6 +25,6 @@ npm run dev`
 ## Features
 
 - Responsive design
-- Fetching data IMDb Api
+- Fetching data TMBD database
 - Server Side Rendering
 
