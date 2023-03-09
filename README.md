@@ -1,3 +1,5 @@
+# IMDB Clone
+
 ## Screenshot
 
 <img width="868" alt="imdb" src="https://user-images.githubusercontent.com/95706081/212567010-5daf67d2-7105-4cab-988e-f92e2b45958b.png">
